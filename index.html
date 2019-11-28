@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jj</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="login">
+	<div class="header-section">
+		<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+		<h1>Register</h1>
+</div>	
+
+<form action="connect.php" method="post" >
+<div class="form-group">
+	<input type="text" name="user" id="user" pattern="[a-zA-Z][a-zA-Z ]*" minlength="3" class="form-control" autocomplete="off" required>
+	<label for="">Name</label>
+</div>
+<div class="form-group">
+	<input type="email" name="email" id="emails" class="form-control" autocomplete="off" required >
+	<label for="">Email</label>
+</div>
+
+<div class="form-group">
+	<input type="password" name="pass" id="pass" class="form-control" autocomplete="off" required>
+	<label for="">Password</label>
+</div>
+
+<div class="form-group">
+	<input type="date" autocomplete="off" name="date" min="1850-01-01" max="2050-01-01" class="form-control" required/>
+	<label for="">Date Of Birth</label>
+</div>
+
+<div class="radio">
+<input type="radio" id="1" name="gender" value="m" autocomplete="off"  value="male" required> Male
+<input type="radio" id="2" name="gender" value="f" autocomplete="off"  value="female" required> Female
+
+	<label for=""></label>
+</div>
+<div class="btn-group">
+	<input type="submit" class="btn-login">
+	
+<div class="clear"></div>
+</div>
+</form>
+<div class="footer-section">
+	<p>Not a member ? <a href="#">Create it!</a></p>
+</div>
+</div>
+</body>
+</html>
